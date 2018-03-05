@@ -112,13 +112,15 @@ function reiniciarMundo() {
     }
 }
 
-swal('Ready ?', {
-    buttons: {
-        yes: {
-            text: 'yes ready!',
-            value: true
+setTimeout(() => {
+    swal('Ready ?', {
+        buttons: {
+            yes: {
+                text: 'yes ready!',
+                value: true
+            }
         }
-    }
-}).then((ok) => {
-    anadirEventosBotones()
-})
+    }).then((ok) => {
+        anadirEventosBotones()
+    })
+}, 500)
